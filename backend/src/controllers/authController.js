@@ -11,7 +11,7 @@ const register = async (req, res) => {
             'SELECT * FROM students WHERE prn_number = ? AND password IS NULL',
             [prn_number]
         );
-
+ 
         if (authorizedStudents.length === 0) {
             return res.status(400).json({
                 success: false,
