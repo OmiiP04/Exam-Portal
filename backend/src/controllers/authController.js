@@ -6,7 +6,7 @@ const register = async (req, res) => {
     try {
         const { username, email, password, prn_number } = req.body;
 
-        // First check if the PRN number exists in the authorized students list
+        // First check if the PRN number exists in the authorized students list  
         const [authorizedStudents] = await pool.query(
             'SELECT * FROM students WHERE prn_number = ? AND password IS NULL',
             [prn_number]
