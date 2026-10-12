@@ -54,5 +54,3 @@ CREATE TABLE exam_results (
     UNIQUE KEY unique_exam_student (exam_id, student_id) -- Prevents duplicate exam submissions
 ); 
 
-
-
