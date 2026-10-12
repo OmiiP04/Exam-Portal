@@ -53,3 +53,6 @@ CREATE TABLE exam_results (
     FOREIGN KEY (student_id) REFERENCES students(id) ON DELETE CASCADE,
     UNIQUE KEY unique_exam_student (exam_id, student_id) -- Prevents duplicate exam submissions
 ); 
+
+
+
