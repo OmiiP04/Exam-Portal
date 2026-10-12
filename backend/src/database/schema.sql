@@ -7,6 +7,7 @@ CREATE TABLE teachers (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+
 -- Create students table
 CREATE TABLE students (
     id INT PRIMARY KEY AUTO_INCREMENT,
