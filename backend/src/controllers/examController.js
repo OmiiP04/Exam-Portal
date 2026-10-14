@@ -56,6 +56,7 @@ const createExam = async (req, res) => {
   }
 };
 
+
 // Get all exams for a teacher
 const getTeacherExams = async (req, res) => {
   try {
